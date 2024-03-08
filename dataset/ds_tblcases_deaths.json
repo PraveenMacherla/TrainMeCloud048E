@@ -1,0 +1,17 @@
+{
+	"name": "ds_tblcases_deaths",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asqldb_covidproject24",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "covid",
+			"table": "tblcases_deaths"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

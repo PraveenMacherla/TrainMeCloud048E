@@ -1,0 +1,31 @@
+{
+	"name": "ds_cases_deaths_raw_http_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_cases_deaths_raw",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourceRelativeLink": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().sourceRelativeLink",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

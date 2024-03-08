@@ -1,0 +1,39 @@
+{
+	"name": "ds_population",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ablob_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tps00010_page_tabular.tsv.gz",
+				"container": "ct-source"
+			},
+			"columnDelimiter": "\t",
+			"compressionCodec": "gzip",
+			"compressionLevel": "Optimal",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\u001f�\b\u0000\u0000\u0000\u0000\u0000\u0000\u0000t�ˮ6˕]�>\u0006�\u000e�\u0001�ȸeF6K*��(J%�",
+				"type": "String"
+			},
+			{
+				"name": "\u0001%\u0018\u0010\f�",
+				"type": "String"
+			},
+			{
+				"name": "�",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "ds_sqlserver",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asqldb_covidproject24",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "covid",
+			"table": "tblpopulation"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
